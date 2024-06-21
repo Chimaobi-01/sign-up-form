@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+@font-face {
+    font-family: "Norse bold";
+    font-weight: normal;
+    src: url("./assets/font/Norse-Bold.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --form-padding: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+body>header {
+    flex-basis: 40%;
+
+    background-image: url("./assets/image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+body>header>p {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 0.35em;
+    padding-bottom: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: .6em;
+}
+
+header>p>a {
+    color: white;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+figure {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Norse bold";
+    font-weight: 400;
+    font-size: 3em;
+    background: #00000077;
+    position: relative;
+    top: 1em;
+    padding: .25em;
+}
+
+img[alt="odin"] {
+    width: 60px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/* .cursive {
+    font-family: "Playwrite NG Modern", cursive, sans-serif;
+    font-weight: 400;
+}
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+} */
