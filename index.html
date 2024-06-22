@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
     <title>Sign up</title>
 </head>
 
@@ -18,13 +19,87 @@
         </div>
         <p>
             Photo by
-            <a href="#">Halie West</a>
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
             on
-            <a href="#">Unsplash</a>
+            <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
         </p>
     </header>
     <main>
-        
+        <form action="" novalidate>
+            <header>
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. <br>
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+
+            </header>
+            <div>
+                <p>
+                    Let's do this!
+                </p>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="first-name">
+                                first name
+                                <input type="text" id="first-name" name="first name">
+                                <span>This field is empty!</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="last-name">
+                                last name
+                                <input type="text" id="last-name" name="last name">
+                                <span>This field is empty!</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="email">
+                                email
+                                <input type="email" id="email" name="email address">
+                                <span>This field is empty!</span>
+                                <span class="invalid-email">Email format not supported</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="phone">
+                                phone number
+                                <input type="tel"  id="phone" name="phone number">
+                                <span>This field is empty!</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="password">
+                                password
+                                <input type="password" id="password" name="password">
+                                <span class="password-error">* Passwords do not match</span>
+                                <span>This field is empty!</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="confirm-password">
+                                confirm password
+                                <input type="password" id="confirm-password" name="confirm password">
+                                <span>This field is empty!</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div>
+                <button type="submit">
+                    Create Account
+                </button>
+                <p>
+                    Already have an account?
+                    <a href="#">Log in</a>
+                </p>
+            </div>
+        </form>
     </main>
 </body>
 
